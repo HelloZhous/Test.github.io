@@ -7,18 +7,16 @@
     <script type="text/javascript" src="language.js"></script>
 </head>
 <body>
-    <div id="text"></div>
+ 
     <script>
         var lang_flag;
         var lang = navigator.language || navigator.userLanguage; //常规浏览器语言和IE浏览器
         lang = lang.substr(0, 2); //截取lang前2位字符
         if (lang == 'zh') {
-            lang_flag = 0;
+           window.location.href = envUrl+"ch_index.html";
         } else {
-            lang_flag = 1;
+           window.location.href = envUrl+"en_index.html";
         }
-        $('#text').text1(love[lang_flag])
-             $('#text').text2(姓名[lang_flag])
     </script>
     
   
